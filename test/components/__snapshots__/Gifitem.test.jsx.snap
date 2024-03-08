@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <GitItem /> Debe hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Título de ejemplo"
+      class="img-custom"
+      src="url_de_ejemplo"
+    />
+    <p>
+      Título de ejemplo
+    </p>
+  </div>
+</div>
+`;
