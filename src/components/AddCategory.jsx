@@ -1,10 +1,9 @@
 import { useState } from "react"
+import PropTypes from 'prop-types';
 export const AddCategory = ({ onAddCategory }) => {
 
 
     const [inputValue, setinputValue] = useState('One Punch');
-
-    // Me quede en el punto de emitir evento al padre
 
     const onInputChange = (event) => {
         setinputValue(event.target.value)
@@ -18,7 +17,7 @@ export const AddCategory = ({ onAddCategory }) => {
     }
     return (
 
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} aria-label="formua">
             <input
                 type="text"
                 value={inputValue}
@@ -28,4 +27,9 @@ export const AddCategory = ({ onAddCategory }) => {
             />
         </form>
     )
+}
+
+
+AddCategory.propTypes = {
+    onAddCategory: PropTypes.func.isRequired
 }

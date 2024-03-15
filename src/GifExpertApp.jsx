@@ -2,7 +2,7 @@ import { useState } from "react"
 import { AddCategory, GifGrid } from "./components/Components"
 
 
-
+// Me quede en la parte: Pruebas del Domponente - GifGridItem
 export const GifExpertApp = () => {
 
     const [categories, setCategories] = useState(['One Punch',]);
